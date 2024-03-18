@@ -52,5 +52,10 @@ public class BeanConfig {
         return new CorsFilter(configurationSource);
     }
 
+    @Bean
+    public static ConfigureRedisAction configureRedisAction() {
+        return ConfigureRedisAction.NO_OP;
+    }
+
 
 }
